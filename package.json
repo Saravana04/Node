@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jasmine-core": "^3.2.1",
+    "karma": "^3.0.0",
+    "karma-jasmine": "^1.1.2",
+    "socket.io": "^2.1.1",
+    "websocket.io": "^0.2.1"
+  },
+  "devDependencies": {
+    "jasmine": "^3.2.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

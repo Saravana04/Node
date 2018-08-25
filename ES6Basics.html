@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <script>
+            var cars=['BMW','TATA','Lancer'];
+        var mCars=['TATA','FIAT'];
+        var allCars=[...cars,...mCars];
+
+            //Arrow functions
+            cars.forEach((c,i)=> console.log(c +" is at index " + i));
+            
+            //classes
+            class Car{
+                constructor(){
+                    this.name="i20";
+                    this.speed="200";
+                }
+
+                Accelerate(){
+                    return (this.name + " is running at " + this.speed + " Kmph ! ");
+                }
+            }
+             
+            class JamesBondCar extends Car{
+                constructor(name,speed,fly,submerge){
+                    super(name,speed);
+                     this.canFly = fly;
+                     this.canSubmerge = submerge;
+                }
+
+                Accelerate(){
+                    return super.Accelerate() + "Can it fly?" + this.canFly;
+                }
+            } 
+             var jbc= new JamesBondCar("Aston Martin",700,true,true);
+             console.log(jbc.Accelerate())
+             
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
